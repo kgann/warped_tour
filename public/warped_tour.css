@@ -1,0 +1,37 @@
+body{
+  background-color:#C7BAA7;
+  font-family:Helvetica;
+}
+
+#events{
+  width:400px;
+  margin:40px auto;
+}
+
+#events h3{
+  text-align:center;
+}
+
+#events .event{
+  padding:5px;
+  background-color:#FFAC00;
+  margin:0 0 10px 0;
+  border:2px solid #978B7D;
+  border-radius:5px;
+}
+
+#events .event p{
+  padding:3px;
+  margin:0;
+}
+
+#events .event p.small{
+  font-size:12px;
+}
+
+#events .event img{
+  float:right;
+  margin:5px;
+  border:2px solid #978B7D;
+  border-radius:5px;
+}

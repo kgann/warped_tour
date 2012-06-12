@@ -1,0 +1,14 @@
+!!!
+%html{:xmlns => 'http://www.w3.org/1999/xhtml', :lang => 'en', 'xml:lang' => 'en'}
+  %head
+    %link{:rel => 'stylesheet', :href => 'warped_tour.css', :type => 'text/css'}
+  %body
+    #events
+      %h3 Warped Tour 2012
+      -@dates.each do |event|
+        .event
+          %img{:src => event[:img]}
+          %p="#{event[:month]}, #{event[:day]} in #{event[:city]}, #{event[:state]}"
+          %p.small="#{event[:temp]}&#176 and #{event[:condition]}"
+          %p.small="#{event[:humidity]}"
+          %p.small="#{event[:wind]}"
